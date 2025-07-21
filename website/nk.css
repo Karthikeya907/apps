@@ -1,245 +1,179 @@
-#nk1{
-   
-    background-size:cover ;
-    width:25vh;
-    margin:10px;
-    height: auto;
-    text-align: center;
-    color:white;
-    
-   
-    
+/* Global Reset and Responsive Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.im1{
-    width:1.5cm;
-    border-radius: 2cm;
-}
-#nk2{
-   
-    width: 25vh;
-    margin: 10px;
-    height: auto;
-    text-align: center;
-    background-color:none;
-
-    color: whitesmoke;
-}
-#nk3{
-
-    background-size:cover ;
-    width: 25vh;
-    margin: 10px;
-    height: auto;
-    text-align: center;
-    background-color:none;
-    color: greenyellow;
-   
-}
-#nk4{
-   
-    background-size:cover ;
-    width:25vh;
-    margin:10px;
-    height: auto;
-    text-align: center;
-    background-color: none;
-
-    color:rgb(255, 0, 0);
-    
-    
-}
-#nk5{
-   
-    width: 25vh;
-    margin: 10px;
-    height: auto;
-    text-align: center;
-    background-color:none;
-    color: aliceblue;
-}
-#nk6{
-
-    background-size:cover ;
-    width: 25vh;
-    margin: 10px;
-    height: auto;
-    text-align: center;
-    background-color:none;
-    color: rgb(248, 248, 248);
-}
-#nk1:hover{
-    border: 2px solid white;
-    background-color: black;
-
-}
-#nk2:hover{
-    border: 2px solid white;
-    background-color:black;
-
-
-}
-#nk3:hover{
-    border: 2px solid white;
-    background-color: black;
-
-}
-#nk4:hover{
-    border: 2px solid white;
-    background-color: black;
-
-}
-#nk5:hover{
-    border: 2px solid white;
-    background-color: black;
-
-}
-#nk6:hover{
-    border: 2px solid white;
-    background-color: black;
-
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
-.b1{
-    background-color:aliceblue;
-    border-color: aliceblue;
-    font-family: serif;
-    border:1px solid black;
-    font-weight: bold;
-    background-image: unset;
-    color: black;
-    border-bottom-left-radius: 2px;
-    border-top-right-radius: 2px;
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDtcK_UV78d8A8-6_1Y23pXRL0yzNJVQ5Ig&s');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
-.b2{
-    background-color:rgba(255, 255, 255, 0.938);
-    border-color: aliceblue;
-    font-family: serif;
-    border-style: none;
-    font-weight: bold;
-    color: black;
-    border-bottom-left-radius: 2px;
-    border-top-right-radius: 2px;
+
+/* Card Styles */
+#nk1, #nk2, #nk3, #nk4, #nk5, #nk6 {
+  flex: 1 1 calc(16.66% - 20px); /* 6 cards per row */
+  max-width: calc(16.66% - 20px);
+  margin: 10px;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
-.b3{
-    border-color: aliceblue;
-    font-family: serif;
-    border-style: none;
-    font-weight: bold;
-    background-color: white;
-    color: black;
-    border-bottom-left-radius: 2px;
-    border-top-right-radius: 2px;
+
+#nk1:hover, #nk2:hover, #nk3:hover, #nk4:hover, #nk5:hover, #nk6:hover {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.b4{
-    background-color:aliceblue;
-    border-color: aliceblue;
-    font-family: serif;
-    border-style: none;
-    font-weight: bold;
-    color: black;
+
+/* Specific Text Colors */
+#nk3 { color: greenyellow; }
+#nk4 { color: red; }
+#nk5 { color: aliceblue; }
+#nk6 { color: rgb(248, 248, 248); }
+
+/* Fix long text wrapping inside cards */
+#nk1 p, #nk2 p, #nk3 p, #nk4 p, #nk5 p, #nk6 p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  padding: 0 5px;
+  text-align: center;
 }
-.b5{
-    background-color:gold;
-    border-color: aliceblue;
-    font-family: serif;
-    border-style: none;
-    font-weight: bold;
-    color: black;
+
+/* Image Styling */
+.im1 {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-.b6{
-    background-color:rgb(14, 189, 212);
-    border-color: aliceblue;
-    font-family: serif;
-    border-style: none;
-    color:antiquewhite;
-    font-weight: bold;
+
+/* Button Styles */
+.b1, .b2, .b3, .b4, .b5, .b6 {
+  font-family: serif;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
 }
-.b{
-    text-align: center;
-    margin-left: 14cm;
-    margin-right: 15cm;
-    border: 2px solid black;
-    background-color: black;
-    font-style:inherit;
-    font-weight: bold;
-    border-radius: 10px;
-    border-style: ridge;
-    color: aqua;
-    margin: auto;
+
+.b1 {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid black;
+}
+.b2 {
+  background-color: rgba(255, 255, 255, 0.938);
+  color: black;
+  border: 1px solid black;
+}
+.b3 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.b4 {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid black;
+}
+.b5 {
+  background-color: gold;
+  color: black;
+  border: 1px solid black;
+}
+.b6 {
+  background-color: rgb(14, 189, 212);
+  color: antiquewhite;
+  border: 1px solid black;
+}
+
+/* Title Box */
+.b {
+  text-align: center;
+  padding: 1em;
+  margin: 20px auto;
+  background-color: black;
+  font-style: inherit;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px ridge black;
+  color: aqua;
   text-shadow:
     0 0 7px #db0c0c,
     0 0 10px #20cf09,
     0 0 21px #2e16b4,
-    0 0 42px rgb(255, 0, 0),
-    0 0 82px rgb(255, 0, 0),
-    0 0 92px rgb(255, 0, 0),
-    0 0 102px rgb(255, 0, 0),
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 102px red,
     0 0 151px rgba(0, 0, 0, 0.342);
 }
 
+/* Flex Containers */
+.mainflex, #app1, #app2, #app3, #app4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto;
+  width: 90%;
+}
 
-.mainflex{
-    display: flex;
-    flex-direction:row;
-    height:5cm;
-    margin:10px;
-    border-color:blueviolet;
-    border-radius: 1cm;
-    flex-wrap:wrap;
-    padding:auto;
+/* Login Page Styling */
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-#app1{
-    display: flex;
-    flex-direction:row;
-    
-    width:auto;
-     margin: auto;
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  #nk1, #nk2, #nk3, #nk4, #nk5, #nk6 {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    max-width: calc(33.33% - 20px);
+  }
 }
-#app2{
-   
-    display: flex;
-    flex-direction:row;
-    width:auto;
-     margin: auto;
-    
-}
-#app3{
-   
-    display: flex;
-    flex-direction:row;
-    width: auto;
-     margin: auto;
-}
-#app4{
-  
-    display: flex;
-    flex-direction:row;
-    width:auto;
-    margin: auto;
-}
-body{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDtcK_UV78d8A8-6_1Y23pXRL0yzNJVQ5Ig&s);
-    background-size:cover;
 
-}
-@media (max-width:800px){
-    .app1{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex:1 1 100%;
-        width: 400px;
-    }
-}
-/*login page*/
-.login{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .b {
+    padding: 0.5em;
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .im1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .login {
+    padding: 1em;
+  }
 }
